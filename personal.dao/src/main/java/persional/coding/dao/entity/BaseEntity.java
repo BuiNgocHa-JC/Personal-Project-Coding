@@ -2,7 +2,6 @@ package persional.coding.dao.entity;
 
 import lombok.Getter;
 import lombok.Setter;
-import persional.coding.dao.util.UserContextUtils;
 
 import javax.persistence.*;
 import java.time.LocalDateTime;

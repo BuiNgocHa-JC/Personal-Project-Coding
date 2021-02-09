@@ -11,10 +11,19 @@ import javax.persistence.*;
 @Builder
 @AllArgsConstructor
 @NoArgsConstructor
-public class Message extends BaseEntity{
+public class Message extends BaseEntity {
     @Enumerated(EnumType.STRING)
     @Column(name = "message_type")
     private MessageType messageType;
+
+    @Column(name = "chat_id")
+    private Long chatId;
+
+    @Column(name = "sender_id")
+    private Long senderId;
+
+    @Column(name = "recipient_id")
+    private Long recipientId;
 
     @Column(name = "content")
     private String content;
@@ -27,4 +36,8 @@ public class Message extends BaseEntity{
 
     @Column(name = "total_message")
     private Long totalMessage;
+
+    @Enumerated(EnumType.STRING)
+    @Column(name = "message_status")
+    private MessageStatus messageStatus;
 }

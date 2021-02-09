@@ -13,7 +13,7 @@ import javax.persistence.*;
 @Setter
 @Builder
 @FieldNameConstants
-public class User extends BaseEntity{
+public class User extends BaseEntity {
     private static final long serialVersionUID = 1L;
 
     @Column(name = "role_id")
